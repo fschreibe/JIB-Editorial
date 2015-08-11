@@ -1,0 +1,98 @@
+\documentclass{jib}
+\newlength{\platz}
+\setlength{\platz}{15pt}
+\RequirePackage{listings}
+\lstset{%
+  basicstyle=\ttfamily,
+  fontadjust,
+  flexiblecolumns=true,
+  frame=L,
+  xleftmargin=15pt,
+  framesep=5pt,
+  emphstyle=\rmfamily\itshape}
+
+\usepackage{pdfpages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% JIB Header/Footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\jibvolume{XX} % insert volume
+\jibissue{X}   % insert issue
+\jibpages{XXX} % insert article ID
+\jibyear{XXXX} % insert year
+\makeHeaderFooter{} % leave as is
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Title Page
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{jibtitlepage}
+
+\jibtitle{Specifications of Standards in Systems Biology}
+
+
+%We did not provide author(s) nor author footnote(s), please complete as applicable.
+% Please make sure to use unique footnote characters for each author
+\jibauthor{Falk Schreiber\iref{1},
+           Gary Bader\iref{2},
+           Martin Golebiewski\iref{3},
+           Michael Hucka\iref{4},
+           Benjamin Kornmeier\iref{5},
+           Nicolas Le Nov\`{e}re\iref{6},
+           Chris Myers\iref{7},
+           David Nickerson\iref{8}
+           Bj\"orn Sommer\iref{9},
+           Dagmar Walthemath\iref{10}, and
+           Stephan Weise\iref{4} 
+           
+\addjibinstitution{1}{Faculty of IT, Monash University, Clayton, Australia \& Institute of Computer Science, Martin-Luther-University Halle-Wittenberg, Germany}
+\addjibinstitution{2}{The Donnelly Centre, University of Toronto, Canada}
+\addjibinstitution{3}{Heidelberg Institute for Theoretical Studies (HITS), Germany}
+\addjibinstitution{4}{Caltech, USA}
+\addjibinstitution{5}{University of Bielefeld, Germany}
+\addjibinstitution{6}{Babraham Institute, UK}
+\addjibinstitution{7}{University of Utah, USA}
+\addjibinstitution{8}{University of Auckland, New Zealand}
+\addjibinstitution{9}{Faculty of IT, Monash University, Clayton, Australia}
+\addjibinstitution{10}{University of Rostock, Germany}
+\addjibinstitution{11}{Leibniz Institute of Plant Genetics and Crop Plant Research, Gatersleben, Germany}}
+\end{jibtitlepage}
+
+Standards shape our everyday life. From nuts and bolts to electronic devices and technological processes, standardised products and processes are all around us. Standards have technological and economic benefits, such as making information exchange, production, and services more efficient. However, novel, innovative areas often either lack proper standards, or documents about standards in these areas are not available from a centralised platform or formal body (such as the International Standardisation Organisation). 
+
+Systems and synthetic biology is a relatively novel area, and it is only in the last decade that the standardisation of data, information, and models related to systems and synthetic biology has  become a community-wide effort. Several standards have been established and are under continuous development as a community initiative. COMBINE, the '\underline{CO}mputational \underline{M}odeling in \underline{BI}ology' \underline{NE}twork~\cite{hucka2015promoting} has been established as an umbrella  initiative to coordinate and promote the development of the various community standards and formats for computational models. 
+
+So far these different standards have been published and made accessible in a variety of ways. The aim of this special issue is to provide a single, easily accessible and citable platform for standards in systems and synthetic biology. The special issue is intended to serve as a centre for standards and related initiatives in systems and synthetic biology. It provides the latest versions of the different standards (and extensions) and will be updated yearly. 
+
+COMBINE standards covered in this special issue are:
+\begin{itemize}
+\item {\bf CellML} to represent, publish and share mathematical models of cellular function. CellML focuses on the representation of a variety of models, for example, electro-physiological models, biochemical pathway models, and mechanical models. In addition, the specification for the {\bf CellML Metadata Framework} is provided.
+
+\item {\bf COMBINE Archive Spezification} supports the exchange of information necessary for a modeling and simulation experiment in biology. It is a zip-compressed container that includes a manifest file, an optional metadata file, and the files describing the model. 
+
+\item {\bf SED-ML}, (Simulation Experiment Description Markup Language) to describe the procedures the models are subjected to.
+
+\item {\bf SBGN} (the Systems Biology Graphical Notation) to graphically represent processes and networks studied in systems biology. The specifications of the tree SBGN languages {\bf SBGN Process Description}, {\bf SBGN Entity Relationship}, and {\bf SBGN Activity Flow} are provided, and these languages allow the representation of different aspects of biological systems at different levels of detail as  graphical maps.
+
+\item {\bf SBML} (Systems Biology Markup Language) to represent and exchange computational models in systems biology such as models of metabolism, signal transduction and gene regulation. In addition to the description of the SBML Core the specifications of the following extensions (packages) are provided:  {\bf Flux Balance Constraints}, {\bf Qualitative Models}, and {\bf }.
+
+\item {\bf SBOL} (Synthetic Biology Open Language) to share and exchange synthetic biology designs.
+\end{itemize}
+
+Standards are important, and so is easy access to these standards. We hope that this special issue will help to increase the use of standards in systems and synthetic biology, and thereby support the exchange, distribution, and archiving  of models in these research fields.
+
+\vspace*{2cm}
+
+GB, MG, MH, NLN, CM, DN, FS and DW are COMBINE coordinators; BS, BK, SW and FS compiled the special issue. \\
+Contact the COMBINE coordinators under combine-coord@googlegroups.com
+
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{jib}
+\bibliography{jib_references}
+
+\end{document}
